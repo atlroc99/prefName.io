@@ -31,6 +31,7 @@ inputs[0].addEventListener("keyup",function (event) {
 		},3000);
 	}
 	else if(hasNumber.test(ar)){
+		errMsg.style.color = "red";
 		errMsg.textContent = "Name cannot contain digits";
 		inputs[1].disabled = true;
 	}

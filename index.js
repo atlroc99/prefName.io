@@ -46,3 +46,9 @@ inputs[0].addEventListener("keyup",function (event) {
 	}
 	log.textContent = `length of the array: ${ar.length} number of spaces: ${spaceCoutner}`;
 });	
+
+inputs[1].addEventListener("click", function(){
+	alert("not impleted yet..booya :/")
+});
+
+

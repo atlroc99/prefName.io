@@ -49,7 +49,7 @@ inputs[0].addEventListener("keyup",function (event) {
 
 inputs[1].addEventListener("click", function(){
 	console.log('Button cliked..');
-	alert("not impleted yet..booya :/")
+	alert("not implemented yet..booya :/")
 });
 
 

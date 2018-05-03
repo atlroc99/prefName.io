@@ -42,6 +42,7 @@ inputs[0].addEventListener("keyup",function (event) {
 	}else{
 		errMsg.style.color = "green";
 		errMsg.textContent = `Name ok! : ${userInput}`;
+		inputs[1].disabled = false;
 	}
 	log.textContent = `length of the array: ${ar.length} number of spaces: ${spaceCoutner}`;
 });	

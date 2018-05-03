@@ -15,23 +15,30 @@
 			color: red;
 			font-size: 20px;
 		}
+		.form-group{
+			margin-top: 30px;
+		}
+		
 
 	</style>
 
 </head>
 <body>
-
 	<div class="container">
-			<div class="form-group">
+		<h4>Allowed characters: Letters A-Z , a-z, dot/ period (.), one space, apostrophe, and a dash(-)</h4>
+		<div class="form-group">
 				<div>
-					<input type="text" name="prefName" required>
+					<input type="text" name="prefName" required class="form-control"><br>
 					<input type="button" value="submit" class="btn btn-primary">
 				</div>
 			</div>
 
 			<div id="msg"></div>
 			<div id="log"></div>
+
+			<hr>
 	</div>
+
 
 
 <script type="text/javascript" src="index.js"></script>

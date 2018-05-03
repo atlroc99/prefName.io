@@ -9,7 +9,7 @@ var spaceCoutner = 0;
 var hasNumber = /\d/;
 
 
-inputs[0].addEventListener("keyup",function (event) {
+inputs[0].addEventListener("keyup",(event)=> {
 	var regex = /^[a-zA-Z \.\-']*?$/;
 	var userInput = inputs[0].value;	
 	console.log(userInput);

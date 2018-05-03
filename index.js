@@ -22,21 +22,25 @@ inputs[0].addEventListener("keyup",function (event) {
 
 	//check for spaces
 	if(spaceCoutner >=2){
+		errMsg.style.color = "red";
 		errMsg.textContent = `* Name cannot contian more than one space. you have entered: ${spaceCoutner} spaces!`;
 		inputs[1].disabled = true;
+		setTimeout(() => {
+			log.textContent = "";
+			errMsg.textContent = "";
+		},3000);
 	}
-
 	else if(hasNumber.test(ar)){
 		errMsg.textContent = "Name cannot contain digits";
 		inputs[1].disabled = true;
 	}
 	else if(!regex.test(userInput)){
-		errMsg.textContent = `Name cannot contain special symbos ${userInput}`;
+		errMsg.style.color = "red";
+		errMsg.textContent = `Name cannot contain special SYMBOLS ${userInput}`;
+		inputs[1].disabled = true;
 	}else{
+		errMsg.style.color = "green";
 		errMsg.textContent = `Name ok! : ${userInput}`;
-		setTimeout(() => {
-			errMsg.textContent = "";
-		},2000);
 	}
 	log.textContent = `length of the array: ${ar.length} number of spaces: ${spaceCoutner}`;
 });	
